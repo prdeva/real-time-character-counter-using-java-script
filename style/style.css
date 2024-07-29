@@ -1,0 +1,44 @@
+.section{
+    border: 1px solid;
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 500px;
+    margin-top: 180px;
+}
+.t1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+input{
+    height: 60px;
+    width: 450px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.t3{
+ 
+    display: inline;
+    margin-left: 240px;
+    color: rgb(0, 232, 182);
+}
+.t2{
+    display: inline;
+    margin-left: 25px;
+    padding-top: 70px;
+    color: rgb(0, 232, 182);
+   
+    
+}
+placeholder{
+    text-align: center;
+
+}
+body{
+    background-image: url(/assets/images.jpeg);
+    background-size: 100%;
+}
+

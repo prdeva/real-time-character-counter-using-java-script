@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section"><br>
+            <h3 class="t1">Real-Time-Character-Counter</h3><br><br>
+            <input type="text" id="input" placeholder="                                   Please Write Your text here..."><br><br><br><br><br>
+               <p class="t2" id="total"></p> Total Value
+            <p class="t3" id="remaining"></p> Remaining  Value
+        </div>
+    </div>
+    <script>
+      
+       document.addEventListener('DOMContentLoaded', (event) => {
+    const textInput = document.getElementById('input');
+    const increaseCount = document.getElementById('total');
+    const decreaseCount = document.getElementById('remaining');
+
+    let total = 0;
+    let remain = 50; // Set initial value for the decrease count
+
+    textInput.addEventListener('input', (event) => {
+        const currentLength = event.target.value.length;
+        const previousLength = total;
+
+        if(remain==0){
+            alert("Character Reach")
+        }
+        else if (currentLength > previousLength) {
+            total++;
+            remain--;
+        } else if (currentLength < previousLength) {
+            total--;
+            remain++;
+        }
+
+        increaseCount.textContent = total;
+        decreaseCount.textContent = remain;
+    });
+});
+
+   
+    </script>
+</body>
+</html>
